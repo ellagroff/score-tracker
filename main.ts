@@ -6,7 +6,7 @@ function UpdateScoreBoard () {
     OLED.newLine()
     OLED.writeStringNewLine("Ties:" + Ties)
     OLED.newLine()
-    OLED.writeStringNewLine("Rounds" + Rounds)
+    OLED.writeStringNewLine("Rounds:" + Rounds)
 }
 let Rounds = 0
 let Ties = 0
