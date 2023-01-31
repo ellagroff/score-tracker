@@ -11,14 +11,17 @@ function UpdateScoreBoard () {
 input.onButtonPressed(Button.A, function () {
     PA += 1
     Rounds += 1
+    UpdateScoreBoard()
 })
 input.onButtonPressed(Button.AB, function () {
     Ties += 1
     Rounds += 1
+    UpdateScoreBoard()
 })
 input.onButtonPressed(Button.B, function () {
     PB += 1
     Rounds += 1
+    UpdateScoreBoard()
 })
 input.onGesture(Gesture.Shake, function () {
     reset()
